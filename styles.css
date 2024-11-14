@@ -1,0 +1,22 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+
+    --deep-red: #5C0000;
+    --brick-red: #751717;
+    --crimson-red: #BA0C0C;
+    --bright-red: #FF0000;
+    --light-blush: #FFEBEB;
+
+    --mint-green: #ECFFEB;
+    --bright-green: #27A300;
+    --forest-green: #2A850E;
+    --moss-green: #2D661B;
+    --dark-green: #005C00;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-blush);
+}
