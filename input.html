@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Present Suggestions</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="js/misc.js"></script>
+    <script src="js/form.js" defer type="module"></script>
+</head>
+<body>
+    <h1>Please enter your information below:</h1>
+  <form id="form">
+    <label for="gender">
+        Gender*
+        <input type="text" id="gender" name="gender" placeholder="Gender*" required>
+    </label>
+
+    <label for="age">
+        Age*
+        <input type="number"min="0" max="150" id="age" name="age" placeholder="Age*" required>
+        <span class="input-error">
+            Please enter a valid number between 0 and 150.
+        </span>
+    </label>
+
+    <label for="interests">
+        Interests
+        <textarea oninput="auto_grow(this)" id="interests" name="interests" placeholder="Interests" rows="1"></textarea>
+    </label>
+
+    <label for="budget">
+        Budget*
+        <input type="number" min="0" id="budget" name="budget" placeholder="Budget*" required>
+        <span class="input-error">
+            Please enter a valid number greater than 0.
+        </span>
+    </label>
+
+    <label for="personality">
+        Personality
+        <input type="text" name="personality" id="personality" placeholder="Personality">
+    </label>
+
+    <label for="numPres">
+        Number of suggestions*
+        <input required min="1" max="100" type="number" name="numPres" id="numPres" placeholder="Number of suggestions">
+        <span class="input-error">
+            Please enter a valid number between 1 and 100.
+        </span>
+    </label>
+
+    <button type="submit" id="presents-button">Get Present Suggestions</button>
+  </form>
+</body>
+</html>
